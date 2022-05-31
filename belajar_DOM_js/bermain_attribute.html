@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Javascript</title>
+        <style>
+            .merah{
+                background: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Belajar DOM Javascript</h1>
+        <img src="images/buahlogoo.png" width="300" id="gambar">
+
+    <input type ="text" value="nama" id="input">
+
+    <script>
+        var img = document.getElementById('gambar');
+        img.width = 400;
+
+        img.setAttribute('class', 'merah');
+        var input = document.getElementById('input');
+        input.value="nama lengkap";
+    </script>

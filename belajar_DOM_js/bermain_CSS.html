@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Javascript</title>
+        <style>
+            .wheat{
+                background: wheat;
+            }
+            .black{
+                border: 2px solid black; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Belajar DOM Javascript</h1>
+        <img src="images/buahlogoo.png" width="300" id="gambar" class="black">
+
+    <input type ="text" value="nama" id="input">
+
+    <script>
+        var img = document.getElementById('gambar');
+        img.width = 400;
+
+        //img.setAttribute('class', 'wheat');
+        img.className += ' wheat';
+
+
+        var input = document.getElementById('input');
+        input.value="nama lengkap";
+        input.style.border = '3px solid darkgrey';
+        input.style.backgroundColor = 'lightgrey';
+    </script>

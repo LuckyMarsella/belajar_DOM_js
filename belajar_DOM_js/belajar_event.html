@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Javascript</title>
+        <style>
+            .wheat{
+                background: wheat;
+            }
+            .black{
+                border: 2px solid black; 
+            }
+        </style>
+    </head>
+    <body onload="alert('sudah selesai!')">
+        <h1>Belajar DOM Javascript</h1>
+        <img onclick = "berubah()" src="buahlogoo.png" width="300" id="gambar" class="black">
+
+    <input type ="text" value="nama" id="input">
+
+    <script>
+        var img = document.getElementById('gambar');
+        img.width = 400;
+
+        //img.setAttribute('class', 'wheat');
+        img.className += ' wheat';
+
+
+        var input = document.getElementById('input');
+        input.value="nama lengkap";
+
+        input.style.border = '3px solid darkgrey';
+        input.style.backgroundColor = 'yellow';
+
+    //---------------------EVENT--------------------
+    function berubah(){
+        img.style.backgroundColor = 'yellow';
+    }
+
+    //input.onclick = function(){ berubah2() };
+    function berubah2(){
+        input.style.backgroundColor = 'grey';
+    }
+
+    input.addEventListener('mouseenter', function(){
+        input.style.backgroundColor = 'grey';
+    });
+    input.addEventListener('mouseleave', function(){
+        input.style.backgroundColor = 'red';
+    });
+
+    </script>
+
+    </body>
+</html>    

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Javascript</title>
+    </head>
+    <body>
+        <h1>Belajar DOM Javascript</h1>
+        <img src="images/buahlogoo.png" width="300">
+
+    <div id="box1" ></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    
+    <script>
+        //selektor
+        document.getElementById('box1').innerHTML ="Sekolah Koding";
+
+        //document.getElementsByClassName('boxes')[0].innerHTML="versi terbaru";
+        //document.getElementsByClassName('boxes')[1].innerHTML="versi sebelumnya";
+        //document.getElementsByClassName('boxes')[2].innerHTML="versi terlama"; 
+
+        var boxes = document.getElementsByClassName('boxes');
+        boxes[0].innerHTML ="versi terbaru";
+        boxes[1].innerHTML ="versi sebelumnya";
+        boxes[2].innerHTML ="versi terlama";
+
+        //document.getElementsByTagName('li').innerHTML="Konten";
+        var list = document.getElementsByTagName('li');
+        list[0].innerHTML ="PHP";
+        list[1].innerHTML ="SASS";
+        list[2].innerHTML ="JQuery";
+
+    </script>
+    </body>
+</html>
