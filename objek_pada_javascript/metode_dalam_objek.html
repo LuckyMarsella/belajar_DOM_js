@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objek pada Javascript</title>
+</head>
+<body>
+    <h1>Objek di Javascript</h1>
+    <img src="images/buahlogoo.png" width="300">
+    <br>
+
+    Nama :<span id="nama"></span>
+    Umur :<span id="umur"></span>
+    Sifat :<span id="sifat"></span>
+
+    <div id="box"></div>
+    
+    <script>
+      //membuat objek
+      //key => value
+
+     var programmer = {
+         Nama  : "Hilman",
+         Umur  : 20,
+         Sifat : "moody",
+         getData : function(){
+             return "Nama: " + this.Nama + "Umur: " + this.Umur;
+         },
+         setData : function(nama){
+            this.Nama = nama;
+         }
+     };
+
+     //var designer = new Object();
+     //designer.Nama = "Ayu";
+     // designer.Umur = 19;
+
+     //document.getElementById('nama').innerHTML = designer["Nama"];
+     //document.getElementById('umur').innerHTML = designer["Umur"];
+     //document.getElementById('sifat').innerHTML = programmer["Sifat"];
+
+     //programmer.setData("Alex")
+     //document.getElementById('box').innerHTML = programmer.getData();
+
+
+     
+    </script>
+</body>
+</html>
